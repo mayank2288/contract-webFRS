@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-from flask_restful import Resource
 import pandas as pd
 
 app = Flask(__name__)
