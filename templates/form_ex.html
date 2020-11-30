@@ -6,10 +6,34 @@
     <title></title>
 </head>
 <body>
-    <form method="post">
-        <p>Enter JDE file </p><br />
-        <input name="JDE_file" />
-        <input type="submit" />
+    <form method="post" enctype="multipart/form-data">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+            <p>Choose Env </p><br />
+            <input type="radio" id="dev1" name="Env" value="1" checked>
+            <label for="male">dev1</label><br>
+            <input type="radio" id="dev2" name="Env" value="2">
+            <label for="female">dev2</label><br>
+            <input type="radio" id="dev3" name="Env" value="3">
+            <label for="other">dev3</label><br />
+            <input type="radio" id="Test" name="Env" value="4">
+            <label for="male">Test</label><br>
+            <input type="radio" id="prod" name="Env" value="5">
+            <label for="male">Prod</label><br>
+
+            <p>Enter JDE file- F0006 </p><br />
+            <input type="file" name="F0006_csv" id="F0006" />
+            <input type="submit" name="submit" value="Submit_F0006" /><br /><br />
+            <p>Enter JDE file- F55HQ0002 </p><br />
+            <input type="file" name="F55HQ0002_csv" id="F55HQ0002" />
+            <input type="submit" name="submit" value="Submit_F55HQ0006" /><br />
     </form>
+        Shape is: {{ shape }}
+        Error : {{error}}
 </body>
 </html>
