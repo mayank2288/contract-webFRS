@@ -5,8 +5,6 @@ import requests
 import math
 import sys
 import base64
-import flask_excel as excel
-
 
 df_conunit = pd.DataFrame(columns=['Id',
 'RecordName',
